@@ -1,14 +1,23 @@
 <form #f=ngForm (ngSubmit)=onSubmit(f) >
+    
+    
+    <label>Email : </label>
     <input
     type="text"
     name="email"
     ngModel>
+    <br>
+
     
+    <label>Password : </label>
     <input
     type="password"
     name="password"
     ngModel>
-    
+    <br>
+
+
+   
     <input class="btn btn-primary" type="file" name="choose file" (change)="onFileSelect($event)"><br><br>
 
     
